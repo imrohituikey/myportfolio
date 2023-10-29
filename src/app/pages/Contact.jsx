@@ -3,9 +3,8 @@ import { contactdata } from "../../../Constants";
 import Image from "next/image";
 import Link from "next/link";
 import { Dots, Rings } from "../components";
-import {motion} from 'framer-motion';
+import {motion} from 'framer-motion'
 import {fadeIn} from '../../../variants';
-
 const Contact = () => {
   return (
     <div
@@ -15,7 +14,12 @@ const Contact = () => {
       <div className="flex flex-col gap-8 xl:gap-12 items-center w-full h-full">
         <div className="flex flex-col xl:flex-row gap-3 w-full justify-center px-6">
           {contactdata.map((contact) => (
-            <div className="flex flex-col items-center justify-center text-sm bg-slate-500 rounded-md xl:h-[12rem] xl:w-[24rem] gap-2 text-center">
+            <motion.div
+            variants={fadeIn("down", 0.05)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex flex-col items-center justify-center text-sm bg-slate-500 rounded-md xl:h-[12rem] xl:w-[24rem] gap-2 text-center">
               <Image
                 src={`/images/${contact.icon}`}
                 width={20}
@@ -24,16 +28,13 @@ const Contact = () => {
               />
               <h3>{contact.name}</h3>
               <p className="">{contact.data}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <div className=" flex flex-col gap-4 xl:gap-6 w-full text-center items-center">
-          <div className="absolute right-5">
-            <Dots/>
-          </div>
-          <div className="absolute left-0 top-4">
+        <div className="absolute left-0 ">
             <Rings/>
           </div>
+        <div className=" flex flex-col gap-4 xl:gap-6 w-full text-center items-center">
           <h1 className="text-2xl xl:text-4xl font-semibold">
             <span className="text-accent">let's </span>Connect
           </h1>
@@ -49,12 +50,15 @@ const Contact = () => {
               className="textarea"
             />
           </form>
-          <div className="absolute left-5 bottom-4">
+          <div className="absolute right-5">
             <Dots/>
           </div>
           <button className="px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 rounded-full">
             Submit
           </button>
+          <div className="absolute left-2">
+            <Dots/>
+          </div>
         </div>
       </div>
       <hr className="border-xl border-teal-500" />
