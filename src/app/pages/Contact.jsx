@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="absolute right-5">
             <Dots/>
           </div>
-          <button className="px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 rounded-full">
+          <button className="link px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 text-black rounded-full">
             Submit
           </button>
           <div className="absolute left-2">

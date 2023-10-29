@@ -21,14 +21,10 @@
   color: white;
  }
 html{
-  cursor: none!important;
   scroll-behavior: smooth!important;
   transition: all 0.5s ease-in-out!important;
 }
 @layer base {
-  html{
-    @apply cursor-none;
-  }
   body {
     @apply bg-transparent text-black overflow-x-hidden leading-relaxed;
   }

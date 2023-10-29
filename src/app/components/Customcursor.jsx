@@ -38,9 +38,10 @@ const Customcursor = () => {
   return (
     <motion.div
       variants={mouseVariants}
-      animate={cursorvariants}
+      animate="default"
       className="w-[32px] h-[32px] bg-black rounded-2xl absolute boxshadow"
-    ></motion.div>
+    >
+    </motion.div>
   );
 };
 

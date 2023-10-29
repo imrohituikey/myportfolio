@@ -7,17 +7,14 @@ import { Nav, Customcursor } from './components'
 
 
 export default function Home() {
-  
-
   return (
     <main className='page'>
-      <Customcursor/>
       <Nav/>
-      <Homepage />
+      {/* <Homepage/> */}
       <About />
       {/* <Skills />
       <Projects /> */}
-      <Contact />
+      {/* <Contact /> */}
     </main>
   )
 }

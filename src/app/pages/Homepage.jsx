@@ -5,6 +5,7 @@ import { fadeIn } from "../../../variants";
 import {Btn,Header,Customcursor} from '../components'
 
 const Home = () => {
+
   return (
     <div id="home" className="page bg-[#02050A] text-white">
       <div className="w-full h-full ">
@@ -15,7 +16,6 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            
             className="h1 font-poppins font-bold"
           >
             HI, I'M <span className="text-[#F75023]">ROHIT</span>!<br/>
