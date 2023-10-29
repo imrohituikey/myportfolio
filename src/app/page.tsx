@@ -6,11 +6,11 @@ import Nav from './components/Nav';
 export default function Home() {
   return (
    <main className='page'>
-    <Nav/>
+    {/* <Nav/>
     <Homepage/>
     <About/>
     <Skills/>
-    <Projects/>
+    <Projects/> */}
     <Contact/>
    </main>
   )
