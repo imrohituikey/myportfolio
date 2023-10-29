@@ -1,15 +1,14 @@
 import Image from 'next/image'
+
+import  {Homepage, About, Skills, Projects, Contact} from './pages'
 import Nav from './components/Nav';
-import Homepage from './pages/Homepage'
-import Contact from './pages/Contact'
-import Projects from './pages/Projects'
-import Skills from './pages/Skills'
 
 export default function Home() {
   return (
-   <main className='page bg-site bg-cover bg-no-repeat'>
+   <main className='page'>
     <Nav/>
     <Homepage/>
+    <About/>
     <Skills/>
     <Projects/>
     <Contact/>
