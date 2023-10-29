@@ -5,7 +5,7 @@ import Contact from './pages/Contact'
 
 export default function Home() {
   return (
-   <main className='bg-site'>
+   <main className='page bg-site bg-cover bg-no-repeat'>
     <Nav/>
     <Homepage/>
     <Contact/>
