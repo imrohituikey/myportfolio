@@ -2,19 +2,20 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
-import {Btn} from '../components'
+import {Btn,Header,Customcursor} from '../components'
 
 const Home = () => {
   return (
     <div id="home" className="page bg-[#02050A] text-white">
       <div className="w-full h-full ">
-   
+        <Header/>
         <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
+            
             className="h1 font-poppins font-bold"
           >
             HI, I'M <span className="text-[#F75023]">ROHIT</span>!<br/>

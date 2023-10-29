@@ -3,17 +3,21 @@
 import Image from 'next/image'
 
 import { Homepage, About, Skills, Projects, Contact } from './pages'
-import Nav from './components/Nav';
+import { Nav, Customcursor } from './components'
+
 
 export default function Home() {
+  
+
   return (
     <main className='page'>
-        <Nav />
-        <Homepage />
-        {/* <About/>
-    <Skills/>
-    <Projects/> */}
-        <Contact />
+      <Customcursor/>
+      <Nav/>
+      <Homepage />
+      <About />
+      {/* <Skills />
+      <Projects /> */}
+      <Contact />
     </main>
   )
 }

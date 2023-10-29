@@ -11,6 +11,26 @@ import {
     HiEnvelope,
   } from 'react-icons/hi2';
   
+  const socials = [
+    {
+      name : 'gmail', icon: 'gmail.png', path :'/'
+    },
+    {
+      name : 'twitter', icon: 'twitter.png' , path :'/'
+    },
+    {
+      name : 'github', icon: 'github.png' , path :'/'
+    },
+    {
+      name : 'skype', icon: 'skype.png' , path :'/'
+    },
+    {
+      name : 'linkdin', icon: 'linkdin.png', path :'/' 
+    },
+    {
+      name : 'youtube', icon: 'yt.png' , path :'/'
+    },
+  ]
   // nav data
   export const navData = [
     { name: 'home', path: '/home', icon: <HiHome /> },
@@ -49,5 +69,6 @@ const contactdata = [
 export {
     webName,
     webDescri,
-    contactdata
+    contactdata,
+    socials,
 }

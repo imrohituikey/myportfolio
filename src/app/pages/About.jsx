@@ -2,7 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='page'></div>
+    <div id='about' className='page bg-white'>
+
+    </div>
   )
 }
 

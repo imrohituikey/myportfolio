@@ -23,7 +23,7 @@ const Nav = () => {
           return (
             <Link
               className={`${
-                link.path === pathname && "text-accent hover:text-black"
+                link.path === pathname && " text-accent hover:text-black"
               } hover:bg-teal-500 p-2 rounded-md`}
               href={`#${link.name}`}
               key={index}
