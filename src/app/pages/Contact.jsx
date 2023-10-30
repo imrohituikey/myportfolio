@@ -3,23 +3,24 @@ import { contactdata } from "../../../Constants";
 import Image from "next/image";
 import Link from "next/link";
 import { Dots, Rings } from "../components";
-import {motion} from 'framer-motion'
-import {fadeIn} from '../../../variants';
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../variants";
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="page xl:py-12 xl:p-12 text-center bg-primary text-white"
+      className="page xl:py-12 xl:p-12 text-center bg-[#02050A] text-white"
     >
       <div className="flex flex-col gap-8 xl:gap-12 items-center w-full h-full">
         <div className="flex flex-col xl:flex-row gap-3 w-full justify-center px-6">
           {contactdata.map((contact) => (
             <motion.div
-            variants={fadeIn("down", 0.05)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex flex-col items-center justify-center text-sm bg-slate-500 rounded-md xl:h-[12rem] xl:w-[24rem] gap-2 text-center">
+              variants={fadeIn("down", 0.05)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="link transition delay-100 ease-in-out flex flex-col items-center justify-center text-sm bg-[#09101A] rounded-md xl:h-[12rem] xl:w-[24rem] gap-2 text-center"
+            >
               <Image
                 src={`/images/${contact.icon}`}
                 width={20}
@@ -32,8 +33,8 @@ const Contact = () => {
           ))}
         </div>
         <div className="absolute left-0 ">
-            <Rings/>
-          </div>
+          <Rings/>
+        </div>
         <div className=" flex flex-col gap-4 xl:gap-6 w-full text-center items-center">
           <h1 className="text-2xl xl:text-4xl font-semibold">
             <span className="text-accent">let's </span>Connect
@@ -51,13 +52,13 @@ const Contact = () => {
             />
           </form>
           <div className="absolute right-5">
-            <Dots/>
+            <Dots />
           </div>
           <button className="link px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 text-black rounded-full">
             Submit
           </button>
           <div className="absolute left-2">
-            <Dots/>
+            <Dots />
           </div>
         </div>
       </div>

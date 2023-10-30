@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
-import {Btn,Header,Customcursor} from '../components'
+import {Btn,Header, ParticalContainer} from '../components'
 
 const Home = () => {
 
@@ -10,6 +10,7 @@ const Home = () => {
     <div id="home" className="page bg-[#02050A] text-white">
       <div className="w-full h-full ">
         <Header/>
+        <ParticalContainer/>
         <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}

@@ -22,15 +22,22 @@ import {
       name : 'github', icon: 'github.png' , path :'/'
     },
     {
-      name : 'skype', icon: 'skype.png' , path :'/'
-    },
-    {
       name : 'linkdin', icon: 'linkdin.png', path :'/' 
     },
     {
       name : 'youtube', icon: 'yt.png' , path :'/'
     },
   ]
+
+const projectData = [
+  {name:'project01', icon: 'portfolioimage5.jpg',path : '/'},
+  {name:'project02', icon: 'portfolioimage5.jpg',path : '/'},
+  {name:'project03', icon: 'portfolioimage5.jpg',path : '/'},
+  {name:'project04', icon: 'portfolioimage5.jpg',path : '/'},
+  {name:'project05', icon: 'portfolioimage5.jpg',path : '/'},
+  {name:'project06', icon: 'portfolioimage5.jpg',path : '/'},
+]
+
   // nav data
   export const navData = [
     { name: 'home', path: '/home', icon: <HiHome /> },
@@ -71,4 +78,5 @@ export {
     webDescri,
     contactdata,
     socials,
+    projectData,
 }

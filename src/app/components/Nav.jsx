@@ -15,8 +15,8 @@ const Nav = () => {
     >
       {/* inner */}
       <div
-        className="flex rounded-lg w-[90%] xl:flex-col items-center justify-between xl:justify-center 
-        gap-y-10 px-4 md:px-40 xl:px-0 h-[40px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl
+        className="glow flex rounded-lg w-[90%] xl:flex-col items-center justify-between xl:justify-center 
+        gap-y-10 px-4 md:px-40 xl:px-0 h-[40px] xl:h-max py-8  backdrop-blur-sm text-3xl
          xl:text-xl xl:rounded-md"
       >
         {navData.map((link, index) => {

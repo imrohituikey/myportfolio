@@ -42,6 +42,9 @@ html{
     0 0 100px
     ;
   }
+  .glow{
+    @apply bg-[#55E6A5] boxshadow transition ease-in-out;
+  }
   .link{
     @apply text-[#55E6A5] uppercase tracking-[4px] text-[16px]
     border-2 border-[#55E6A5] px-[22px] py-[7px]
