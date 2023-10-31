@@ -17,8 +17,8 @@ const Skills = () => {
         </div>
         <div className=" flex gap-3 flex-col flex-wrap xl:flex-row justify-center xl:gap-8 xl:pt-6">
           {["Certificates", "Education", "Biography"].map(
-            (item) => (
-              <button className="link bg-purple-600 pointer-cursor px-8 py-3 bg-secondry rounded-md text-black" key={item.key}>
+            (item,index) => (
+              <button className="link bg-purple-600 pointer-cursor px-8 py-3 bg-secondry rounded-md text-black" key={index}>
                 {item}
               </button>
             )
@@ -29,15 +29,14 @@ const Skills = () => {
       <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap items-center justify-center">
         {skillData.map((item,index) => (
           <div className="bg-white/40 backdrop-blur-md flex h-[22rem] flex-col p-12 justify-around border xl:w-[30%] rounded-lg gap-3
-          transition ease-in-out delay 50 hover:scale-105">
+          transition ease-in-out delay 50 hover:scale-105" key={index}>
             <div className="pb-4 w-[10rem] border-b-2 border-teal">
               <Image
                 src={`/images/${item.icon}`}
                 width={40}
                 height={40}
-                alt=""
+                alt="image"
                 className={`${item.class}`}
-                key={index}
               />
             </div>
             <div className="uppercase">{item.name}</div>

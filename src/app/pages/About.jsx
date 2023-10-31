@@ -15,7 +15,7 @@ const About = () => {
             className="rounded-full xl:rounded-md"
             width={400}
             height={400}
-            alt=""
+            alt="image"
           />
         </div>
         <div className="basis-1/2 flex items-center grow justify-center xl:py-4 bg-white/20 rounded-lg backdrop-blur-sm">

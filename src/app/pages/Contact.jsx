@@ -26,7 +26,7 @@ const Contact = () => {
                 src={`/images/${contact.icon}`}
                 width={20}
                 height={20}
-                alt=""
+                alt="image"
                 
               />
               <h3>{contact.name}</h3>
