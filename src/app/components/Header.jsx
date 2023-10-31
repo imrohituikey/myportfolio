@@ -9,7 +9,7 @@ const Header = () => {
       <div className="xl:text-3xl font-poppins font-bold uppercase"><span className="text-[#55E6A5]">Rohit</span>.<span className="text-[#F75023]">Dev</span></div>
       <div className="flex gap-x-6 z-10">
         {socials.map((item) => (
-            <Link href={"/"}>
+            <Link href={item.path}>
               <div className="hover:scale-105">
               <Image
                 className='hover:boxshadow cursor-none'

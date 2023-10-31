@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { projectData } from "../../../Constants";
-import {FiArrowRight} from 'react-icons/fi'
+import { FiArrowRight } from "react-icons/fi";
 
 const Projects = () => {
   return (
@@ -28,18 +28,15 @@ const Projects = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap items-center justify-center">
-          
           {projectData.map((item) => (
             <div className="flex flex-col xl:flex-col w-[90%] xl:w-[22rem] h-80 overflow-hidden justify-start xl:h-64 group">
-              <Image
-                src={`/images/${item.icon}`}
-                width={600}
-                height={400}
-              />
+              <Image src={`/images/${item.icon}`} width={600} height={400} />
               <span className="relative">
                 <div className=" w-full flex flex-row justify-between items-center px-6 h-[6rem] bg-[#040836] group-hover:-translate-y-24 group-hover:transition group-hover:delay-75 group-hover:ease-in-out">
                   <h2>{item.name}</h2>
-                  <div className="bg-[#ff014f] flex rounded-full items-center justify-center w-12 h-12 text-2xl cursor-pointer"><FiArrowRight/></div>
+                  <div className="bg-[#ff014f] flex rounded-full items-center justify-center w-12 h-12 text-2xl cursor-pointer">
+                    <FiArrowRight />
+                  </div>
                 </div>
               </span>
             </div>

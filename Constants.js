@@ -19,7 +19,7 @@ import {
       name : 'twitter', icon: 'twitter.png' , path :'/'
     },
     {
-      name : 'github', icon: 'github.png' , path :'/'
+      name : 'github', icon: 'github.png' , path :'https://github.com/imrohituikey'
     },
     {
       name : 'linkdin', icon: 'linkdin.png', path :'/' 
@@ -36,6 +36,14 @@ const projectData = [
   {name:'project04', icon: 'portfolioimage5.jpg',path : '/'},
   {name:'project05', icon: 'portfolioimage5.jpg',path : '/'},
   {name:'project06', icon: 'portfolioimage5.jpg',path : '/'},
+]
+const skillData = [
+  {name : "Html", icon: 'html-5.png', level:2, class: 'animate-none', about : 'Html Basics, DOM, Input Attributes, HTML API, HTML + CSS + JavaScript, HTML Validator'},
+  {name : "css", icon: 'css.png', level:2,class: 'animate-none', about: 'Basics, Selectors, Properties, Pseudo-classes & Elements, Modules'},
+  {name : "javascript", icon: 'javascript.png', level:2, class: 'animate-none', about:''},
+  {name : "Java", icon: 'java.png', level:2,class: 'animate-none', about: ''},
+  {name : "react", icon: 'react.png', level:2, class: 'animate-spin', about:''},
+  {name : "node", icon: 'node.png', level:2, class: 'animate-none', about:''},
 ]
 
   // nav data
@@ -79,4 +87,5 @@ export {
     contactdata,
     socials,
     projectData,
+    skillData,
 }

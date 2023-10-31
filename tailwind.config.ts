@@ -25,9 +25,6 @@ const config: Config = {
           '50%': { transform: 'rotate(3deg)' },
         }
       },
-      animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',
@@ -35,9 +32,6 @@ const config: Config = {
       },
       backgroundImage: {
         site: 'url("/images/mainBgsite.jpeg")',
-      },
-      animation: {
-        'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
@@ -50,6 +44,6 @@ const config: Config = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar'),require("@nextui-org/react")],
 }
 export default config

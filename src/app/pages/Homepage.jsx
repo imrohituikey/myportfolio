@@ -19,7 +19,7 @@ const Home = () => {
             exit="hidden"
             className="h1 font-poppins font-bold"
           >
-            HI, I'M <span className="text-[#F75023]">ROHIT</span>!<br/>
+            HI, I'M <span className="text-[#55E6A5]">ROHIT</span>!<br/>
             CREATIVE <span className="text-[#55E6A5]">CODER</span>
           </motion.h1>
           <motion.p
