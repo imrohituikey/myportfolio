@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex gap-x-6 z-10">
         {socials.map((item) => (
             <Link href={item.path}>
-              <div className="hover:scale-105">
+              <div className="hover:scale-105" key={item.key}>
               <Image
                 className='hover:boxshadow cursor-none'
                 src={`/images/${item.icon}`}

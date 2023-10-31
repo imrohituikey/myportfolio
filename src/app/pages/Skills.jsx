@@ -18,7 +18,7 @@ const Skills = () => {
         <div className=" flex gap-3 flex-col flex-wrap xl:flex-row justify-center xl:gap-8 xl:pt-6">
           {["Certificates", "Education", "Biography"].map(
             (item) => (
-              <button className="link bg-purple-600 pointer-cursor px-8 py-3 bg-secondry rounded-md text-black">
+              <button className="link bg-purple-600 pointer-cursor px-8 py-3 bg-secondry rounded-md text-black" key={item.key}>
                 {item}
               </button>
             )
@@ -37,6 +37,7 @@ const Skills = () => {
                 height={40}
                 alt=""
                 className={`${item.class}`}
+                key={item.key}
               />
             </div>
             <div className="uppercase">{item.name}</div>
