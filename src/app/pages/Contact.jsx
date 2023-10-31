@@ -13,12 +13,13 @@ const Contact = () => {
     >
       <div className="flex flex-col gap-8 xl:gap-12 items-center w-full h-full">
         <div className="flex flex-col xl:flex-row gap-3 w-full justify-center px-6">
-          {contactdata.map((contact) => (
+          {contactdata.map((contact,index) => (
             <motion.div
               variants={fadeIn("down", 0.05)}
               initial="hidden"
               animate="show"
               exit="hidden"
+              key={index}
               className="link transition delay-100 ease-in-out flex flex-col items-center justify-center text-sm bg-[#09101A] rounded-md xl:h-[12rem] xl:w-[24rem] gap-2 text-center"
             >
               <Image
@@ -26,6 +27,7 @@ const Contact = () => {
                 width={20}
                 height={20}
                 alt=""
+                
               />
               <h3>{contact.name}</h3>
               <p className="">{contact.data}</p>

@@ -27,7 +27,7 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap items-center justify-center">
-        {skillData.map((item) => (
+        {skillData.map((item,index) => (
           <div className="bg-white/40 backdrop-blur-md flex h-[22rem] flex-col p-12 justify-around border xl:w-[30%] rounded-lg gap-3
           transition ease-in-out delay 50 hover:scale-105">
             <div className="pb-4 w-[10rem] border-b-2 border-teal">
@@ -37,7 +37,7 @@ const Skills = () => {
                 height={40}
                 alt=""
                 className={`${item.class}`}
-                key={item.key}
+                key={index}
               />
             </div>
             <div className="uppercase">{item.name}</div>
