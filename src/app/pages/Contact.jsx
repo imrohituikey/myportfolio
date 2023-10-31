@@ -30,7 +30,7 @@ const Contact = () => {
                 
               />
               <h3>{contact.name}</h3>
-              <p className="">{contact.data}</p>
+              <p className="hover:text-black">{contact.data}</p>
             </motion.div>
           ))}
         </div>
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
         <div className=" flex flex-col gap-4 xl:gap-6 w-full text-center items-center">
           <h1 className="text-2xl xl:text-4xl font-semibold">
-            <span className="text-accent">let's </span>Connect
+            <span className="text-accent">let&apos;s </span>Connect
           </h1>
           <form className=" flex flex-col gap-6 bg-black backdrop-blur-lg xl:w-[60%] p-3 xl:p-8 rounded-md">
             <div className="flex gap-4 xl:gap-6">

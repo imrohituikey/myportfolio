@@ -19,7 +19,7 @@ const Home = () => {
             exit="hidden"
             className="h1 font-poppins font-bold"
           >
-            HI, I'M <span className="text-[#55E6A5]">ROHIT</span>!<br/>
+            HI, I&apos;M <span className="text-[#55E6A5]">ROHIT</span>!<br/>
             CREATIVE <span className="text-[#55E6A5]">CODER</span>
           </motion.h1>
           <motion.p
@@ -29,7 +29,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-2xl xl:max-x-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I'm a web Developer with a mission to create delightful and 
+            I&apos;m a web Developer with a mission to create delightful and 
             intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail,
              I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
           </motion.p>
