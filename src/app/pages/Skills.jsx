@@ -32,7 +32,7 @@ const Skills = () => {
       <div className="flex flex-col gap-6 xl:flex-row xl:flex-wrap items-center justify-center">
         {skillData.map((item, index) => (
           <div
-            className="bg-white/40 hover:bg-white/10 backdrop-blur-md p-6 flex h-full flex-col xl:p-6 justify-around border xl:w-[30%] rounded-lg gap-2
+            className="bg-white/40 hover:bg-white/10 backdrop-blur-md p-6 flex h-[90%] w-[85%] xl:h-full flex-col xl:p-6 justify-around border xl:w-[30%] rounded-lg gap-2
            hover:scale-110 hover:flex-col hover:items-center hover:text-center hover:ease-in-out transition-all group"
             key={index}
           >
@@ -47,7 +47,7 @@ const Skills = () => {
             </div>
             <h1 className="uppercase text-white font-bold">{item.name}</h1>
             <div className="flex items-center gap-4">Level -{item.level}</div>
-            <p className="w-[auto] whitespace-normal group-hover:text-center">
+            <p className="w-[auto] text-sm xl:text-md whitespace-normal group-hover:text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
               inventore. Id, voluptatibus repellat voluptatum libero corporis
               inventore totam aut nihil.
