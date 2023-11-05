@@ -25,11 +25,14 @@ html{
   transition: all 0.5s ease-in-out!important;
 }
 @layer base {
+  html{
+    @apply transition-all ease-in-out;
+  }
   body {
-    @apply bg-transparent text-black overflow-x-hidden leading-relaxed;
+    @apply bg-transparent text-black overflow-x-hidden leading-relaxed transition-all ease-in-out;
   }
   .page {
-    @apply w-full h-screen ;
+    @apply w-full h-screen;
   }
   p{
     @apply text-white

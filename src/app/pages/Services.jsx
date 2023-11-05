@@ -5,10 +5,10 @@ const Services = () => {
     <div
       id="services"
       className="px-6 md:px-[12rem] bg-[#02050A] text-white  flex flex-col justify-center items-center gap-4"> 
-      <h1 className="self-center text-2xl py-3">My Skills</h1>
+      <h1 className="self-center text-2xl py-3">My Services</h1>
       <div className="flex flex-col gap-4">
         <div className="items-center text-center">
-          <h1 className="md:text-5xl uppercase link transition ease-in-out rounded-full">
+          <h1 className="xl:text-4xl uppercase link transition ease-in-out rounded-md xl:px-48">
             What I do
           </h1>
         </div>

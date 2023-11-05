@@ -13,8 +13,8 @@ const About = () => {
           <Image
             src={"/images/img1.jpg"}
             className="rounded-full xl:rounded-md"
-            width={400}
-            height={400}
+            width={200}
+            height={200}
             alt="image"
           />
         </div>
@@ -24,16 +24,16 @@ const About = () => {
               <span className="text-xl text-bold uppercase">Biography</span>
               <div className="flex flex-col w-full h-full gap-12">
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
-                  <h2>Name</h2>
+                  <h4>Name</h4>
                   <p>Rohit kumar uaike</p>
                 </div>
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
-                  <h2>SSC</h2>
-                  <p>2018</p>
+                  <h2>Email</h2>
+                  <p>Rohituaike81@gmail.com</p>
                 </div>
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
-                  <h2>Graduation</h2>
-                  <p>2022</p>
+                  <h2>Age</h2>
+                  <p>23 Y</p>
                 </div>
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
                   <h2>Post Graduaction</h2>
