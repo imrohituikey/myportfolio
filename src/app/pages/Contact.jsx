@@ -41,7 +41,7 @@ const Contact = () => {
           <h1 className="text-2xl xl:text-4xl font-semibold">
             <span className="text-accent">let&apos;s </span>Connect
           </h1>
-          <form className=" flex flex-col gap-6 bg-black backdrop-blur-lg xl:w-[60%] p-3 xl:p-8 rounded-md">
+          <form className="z-10 flex flex-col gap-6 xl:w-[60%] p-3 xl:p-8 rounded-md">
             <div className="flex gap-4 xl:gap-6">
               <input type="text" placeholder="Your Name" className="input" />
               <input type="email" placeholder="Your Email" className="input" />
@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="absolute right-5">
             <Dots />
           </div>
-          <button className="link px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 text-black rounded-full">
+          <button className="link px-4 py-1 xl:px-8 xl:py-2 bg-orange-400 text-black rounded-md">
             Submit
           </button>
           <div className="absolute left-2">
