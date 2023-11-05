@@ -24,8 +24,8 @@ const About = () => {
               <span className="text-xl text-bold uppercase">Biography</span>
               <div className="flex flex-col w-full h-full gap-12">
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
-                  <h2>HSC</h2>
-                  <p>2016</p>
+                  <h2>Name</h2>
+                  <p>Rohit kumar uaike</p>
                 </div>
                 <div className="flex justify-between border-b-2 border-blue-600 px-6">
                   <h2>SSC</h2>
